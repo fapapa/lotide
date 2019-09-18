@@ -23,7 +23,7 @@ const assertArraysEqual = function(actual, expected) {
 const flatten = function(array) {
   return array.reduce((flattened, el) => {
     if (Array.isArray(el)) {
-      flatten(el).forEach((e) => flattened.push(e));
+      flatten(el).forEach((nestedEl) => flattened.push(nestedEl));
     } else {
       flattened.push(el);
     }
