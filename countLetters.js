@@ -24,6 +24,6 @@ const countLetters = function(string) {
   }, {});
 };
 
-let sample = "lighthouse in the house";
-assertEqual(countLetters(sample)['l'], 1);
-assertEqual(countLetters(sample)['h'], 4);
+// let sample = "lighthouse in the house";
+// assertEqual(countLetters(sample)['l'], 1);
+// assertEqual(countLetters(sample)['h'], 4);

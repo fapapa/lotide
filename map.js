@@ -30,20 +30,20 @@ const map = function(arr, callback) {
   return results;
 };
 
-const words = ["ground", "control", "to", "major", "tom"];
-const results1 = map(words, word => word[0]);
-assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
+// const words = ["ground", "control", "to", "major", "tom"];
+// const results1 = map(words, word => word[0]);
+// assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
 
-const nums = [1, 2, 3];
-assertArraysEqual(map(nums, (n) => n * 3), [3, 6, 9]);
+// const nums = [1, 2, 3];
+// assertArraysEqual(map(nums, (n) => n * 3), [3, 6, 9]);
 
-const truncatedDays = ["Mon", "Tues", "Wednes", "Thurs", "Fri", "Satur", "Sun"];
-assertArraysEqual(map(truncatedDays, (day) => day + "day"),
-                  ["Monday",
-                   "Tuesday",
-                   "Wednesday",
-                   "Thursday",
-                   "Friday",
-                   "Saturday",
-                   "Sunday"]
-                 );
+// const truncatedDays = ["Mon", "Tues", "Wednes", "Thurs", "Fri", "Satur", "Sun"];
+// assertArraysEqual(map(truncatedDays, (day) => day + "day"),
+//                   ["Monday",
+//                    "Tuesday",
+//                    "Wednesday",
+//                    "Thursday",
+//                    "Friday",
+//                    "Saturday",
+//                    "Sunday"]
+//                  );

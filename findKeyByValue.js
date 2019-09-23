@@ -18,9 +18,9 @@ const findKeyByValue = function(obj, val) {
   return undefined;
 };
 
-let test = {
-  firstName: "Fabio",
-  lastName: "Papa"
-};
+// let test = {
+//   firstName: "Fabio",
+//   lastName: "Papa"
+// };
 
-assertEqual(findKeyByValue(test, "Fabio"), "");
+// assertEqual(findKeyByValue(test, "Fabio"), "");
