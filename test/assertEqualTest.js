@@ -1,6 +1,9 @@
+const assert = require('chai').assert;
 const assertEqual = require('../assertEqual.js');
 
-assertEqual("Lighthouse", "Lighthouse");
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(1, 3);
+describe('#assertEqual', () => {
+  it('returns true when passed two identical strings', () => {
+    const sameSame = "Lighthouse";
+    assert.match(assertEqual(sameSame, sameSame), /passed/i);
+  });
+});

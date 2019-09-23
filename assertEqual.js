@@ -8,6 +8,7 @@ const assertEqual = function(actual, expected) {
   }
 
   console.log(msg);
+  return msg;
 };
 
 module.exports = assertEqual;
