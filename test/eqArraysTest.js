@@ -1,13 +1,15 @@
-const assertEqual = require('../assertEqual.js');
+const assert = require('chai').assert;
 const eqArrays = require('../eqArrays.js');
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([], []), true);
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), false);
-assertEqual(eqArrays(["hi"], ["hi"]), true);
-assertEqual(eqArrays([], [1]), false);
+describe('#eqArrays', () => {
+  it('returns true when passed in two identical arrays', () => {
+    const duh = [1, 2, 3];
+    assert.isTrue(eqArrays(duh, duh));
+  });
 
-eqArrays([[2, 3], [4]], [[2, 3], [4]]); // => true
-
-eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]); // => false
-eqArrays([[2, 3], [4]], [[2, 3], 4]); // => false
+  it('returns false when passed two different arrays', () => {
+    const a = [1];
+    const b = [2];
+    assert.isFalse(eqArrays(a, b));
+  });
+});
