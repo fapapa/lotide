@@ -16,7 +16,3 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 module.exports = assertObjectsEqual;
-
-// assertObjectsEqual({a: 1}, {a: 1}); // should pass
-// assertObjectsEqual({a: 1}, {b: 2}); // should fail
-// assertObjectsEqual({a: 1}, true); // should fail

@@ -24,6 +24,8 @@ const countLetters = function(string) {
   }, {});
 };
 
+module.exports = countLetters;
+
 // let sample = "lighthouse in the house";
 // assertEqual(countLetters(sample)['l'], 1);
 // assertEqual(countLetters(sample)['h'], 4);

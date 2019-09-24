@@ -18,6 +18,8 @@ const findKeyByValue = function(obj, val) {
   return undefined;
 };
 
+module.exports = findKeyByValue;
+
 // let test = {
 //   firstName: "Fabio",
 //   lastName: "Papa"
