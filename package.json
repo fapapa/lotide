@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@fapapa/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Like lodash, only worse",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/fapapa/lotide.git"
   },
-  "author": "",
+  "author": "Fabio Papa",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fapapa/lotide/issues"
